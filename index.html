@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌟 Image Gallery</h1>
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+
+    <div class="filters">
+        <button onclick="filterGallery('all')">All</button>
+        <button onclick="filterGallery('nature')">Nature</button>
+        <button onclick="filterGallery('city')">City</button>
+        <button onclick="filterGallery('animals')">Animals</button>
+        <button onclick="filterGallery('vehicles')">Vehicles</button>
+    </div>
+</header>
+
+<div class="gallery">
+
+    <!-- Nature -->
+    <div class="gallery-item nature">
+        <img src="C:\chinni\codealpha\task1\images\nature1.jpg" alt="Nature">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="C:\chinni\codealpha\task1\images\nature2.jpg" alt="Nature">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="C:\chinni\codealpha\task1\images\nature3.jpg" alt="Nature">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="C:\chinni\codealpha\task1\images\nature4.jpg" alt="Nature">
+    </div>
+
+    <!-- City -->
+    <div class="gallery-item city">
+        <img src="C:\chinni\codealpha\task1\images\city1.jpg" alt="City">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="C:\chinni\codealpha\task1\images\city2.jpg" alt="City">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="C:\chinni\codealpha\task1\images\city3.jpg" alt="City">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="C:\chinni\codealpha\task1\images\city4.jpg" alt="City">
+    </div>
+    <!-- Vehicles -->
+    <div class="gallery-item vehicles">
+        <img src="C:\chinni\codealpha\task1\images\vehicle1.jpg" alt="Vehicle">
+    </div>
+
+    <div class="gallery-item vehicles">
+        <img src="C:\chinni\codealpha\task1\images\vehicle2.jpg" alt="Vehicle">
+    </div>
+
+    <div class="gallery-item vehicles">
+        <img src="C:\chinni\codealpha\task1\images\vehicle3.jpg" alt="Vehicle">
+    </div>
+
+    <div class="gallery-item vehicles">
+        <img src="C:\chinni\codealpha\task1\images\vehicle4.jpg" alt="Vehicle">
+    </div>
+
+
+    <!-- Animals -->
+    <div class="gallery-item animals">
+        <img src="C:\chinni\codealpha\task1\images\animal1.jpg" alt="Animal">
+    </div>
+
+    <div class="gallery-item animals">
+        <img src="C:\chinni\codealpha\task1\images\animal2.jpg" alt="Animal">
+    </div>
+
+    <div class="gallery-item animals">
+        <img src="C:\chinni\codealpha\task1\images\animal3.jpg" alt="Animal">
+    </div>
+
+    <div class="gallery-item animals">
+        <img src="C:\chinni\codealpha\task1\images\animal4.jpg" alt="Animal">
+    </div>
+
+    
+</div>
+
+<!-- Lightbox -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <span class="prev">&#10094;</span>
+
+    <img id="lightbox-img" src="" alt="">
+
+    <span class="next">&#10095;</span>
+
+    <div id="counter"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

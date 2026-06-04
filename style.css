@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef2ff,#dbeafe);
+    min-height:100vh;
+    padding:20px;
+    transition:.4s;
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:3rem;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+#themeBtn{
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+#themeBtn:hover{
+    transform:scale(1.05);
+}
+
+.filters{
+    margin-top:15px;
+}
+
+.filters button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    background:#0f172a;
+    color:white;
+    transition:.3s;
+}
+
+.filters button:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+}
+
+.gallery{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.95);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.lightbox img{
+    max-width:85%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:45px;
+    cursor:pointer;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+    font-size:50px;
+    cursor:pointer;
+    padding:15px;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+#counter{
+    position:absolute;
+    bottom:30px;
+    color:white;
+    font-size:20px;
+}
+
+body.dark{
+    background:#0f172a;
+}
+
+body.dark h1{
+    color:white;
+}
+
+body.dark .filters button{
+    background:#334155;
+}
+
+body.dark #themeBtn{
+    background:#f59e0b;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .lightbox img{
+        max-width:95%;
+    }
+
+    .prev,
+    .next{
+        font-size:35px;
+    }
+}
